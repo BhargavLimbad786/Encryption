@@ -11,7 +11,8 @@ Features
 
 Dependencies
 
-    check the given requirements.txt file for all Dependencies and used it for your script.
+    check the given requirements.txt file for all Dependencies and used it for your script.run 
+    pip install -r requirements.txt
 
 Installation
 
