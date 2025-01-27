@@ -120,57 +120,57 @@ All hashing functions:
 
     aes_decrypt_ecb(ciphertext, key)
 
-    Decrypts AES-encrypted ciphertext in ECB mode.
+        Decrypts AES-encrypted ciphertext in ECB mode.
 
-    Args:
+        Args:
 
-    ciphertext (bytes): The encrypted data.
+        ciphertext (bytes): The encrypted data.
 
-    key (bytes): The decryption key.
+        key (bytes): The decryption key.
 
-    Returns:
+        Returns:
 
-    Decrypted plaintext (str).
+        Decrypted plaintext (str).
 
     RSA Encryption/Decryption
 
     generate_rsa_keys()
 
-    Generates a pair of RSA public and private keys.
+        Generates a pair of RSA public and private keys.
 
-    Returns:
+        Returns:
 
-    private_key (bytes): RSA private key.
+        private_key (bytes): RSA private key.
 
-    public_key (bytes): RSA public key.
+        public_key (bytes): RSA public key.
 
-    rsa_encrypt(plaintext, public_key)
+        rsa_encrypt(plaintext, public_key)
 
-    Encrypts plaintext using an RSA public key.
+        Encrypts plaintext using an RSA public key.
 
-    Args:
+        Args:
 
-    plaintext (str): The plaintext to encrypt.
+        plaintext (str): The plaintext to encrypt.
 
-    public_key (bytes): The RSA public key.
+        public_key (bytes): The RSA public key.
 
-    Returns:
+        Returns:
 
     Encrypted data (bytes).
 
     rsa_decrypt(encrypted_data, private_key)
 
-    Decrypts RSA-encrypted data using a private key.
+        Decrypts RSA-encrypted data using a private key.
 
-    Args:
+        Args:
 
-    encrypted_data (bytes): The encrypted data.
+        encrypted_data (bytes): The encrypted data.
 
-    private_key (bytes): The RSA private key.
+        private_key (bytes): The RSA private key.
 
-    Returns:
+        Returns:
 
-    Decrypted plaintext (str).
+        Decrypted plaintext (str).
 
 Hashing Functions
 
@@ -186,11 +186,6 @@ Hashing Functions
 
     sha512_hash(data): Generates a SHA-512 hash.
 
-All hashing functions:
-
-    Args: data (str): Input string to hash.
-
-    Returns: Hash value (str).
 
 Outputs
 
