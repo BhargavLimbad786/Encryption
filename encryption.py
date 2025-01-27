@@ -102,8 +102,9 @@ def rsa_encrypt(plaintext, public_key):
     encrypted_data = cipher.encrypt(plaintext.encode('utf-8'))
     return encrypted_data
 
-# RSA Decryption (Decrypt ciphertext with RSA private key)
 def rsa_decrypt(encrypted_data, private_key):
+    # RSA Decryption (Decrypt ciphertext with RSA private key)
+
     rsa_key = RSA.import_key(private_key)
     cipher = PKCS1_OAEP.new(rsa_key)
     
