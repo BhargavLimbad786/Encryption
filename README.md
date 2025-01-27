@@ -21,6 +21,187 @@ to Run the script as a standalone program:
 
     python script_name.py
 
+Function Details
+
+AES Encryption/Decryption
+
+aes_encrypt_ecb(data, key)
+
+Encrypts plaintext using AES in ECB mode.
+
+Args:
+
+data (str): The plaintext to encrypt.
+
+key (bytes): A key of length 16, 24, or 32 bytes.
+
+Returns:
+
+Encrypted data (bytes).Function Details
+AES Encryption/Decryption
+
+    aes_encrypt_ecb(data, key)
+
+        Encrypts plaintext using AES in ECB mode.
+
+        Args:
+
+            data (str): The plaintext to encrypt.
+
+            key (bytes): A key of length 16, 24, or 32 bytes.
+
+        Returns:
+
+            Encrypted data (bytes).
+
+    aes_decrypt_ecb(ciphertext, key)
+
+        Decrypts AES-encrypted ciphertext in ECB mode.
+
+        Args:
+
+            ciphertext (bytes): The encrypted data.
+
+            key (bytes): The decryption key.
+
+        Returns:
+
+            Decrypted plaintext (str).
+
+RSA Encryption/Decryption
+
+    generate_rsa_keys()
+
+        Generates a pair of RSA public and private keys.
+
+        Returns:
+
+            private_key (bytes): RSA private key.
+
+            public_key (bytes): RSA public key.
+
+    rsa_encrypt(plaintext, public_key)
+
+        Encrypts plaintext using an RSA public key.
+
+        Args:
+
+            plaintext (str): The plaintext to encrypt.
+
+            public_key (bytes): The RSA public key.
+
+        Returns:
+
+            Encrypted data (bytes).
+
+    rsa_decrypt(encrypted_data, private_key)
+
+        Decrypts RSA-encrypted data using a private key.
+
+        Args:
+
+            encrypted_data (bytes): The encrypted data.
+
+            private_key (bytes): The RSA private key.
+
+        Returns:
+
+            Decrypted plaintext (str).
+
+Hashing Functions
+
+    md5_hash(data): Generates an MD5 hash of the input data.
+
+    sha1_hash(data): Generates a SHA-1 hash.
+
+    sha224_hash(data): Generates a SHA-224 hash.
+
+    sha256_hash(data): Generates a SHA-256 hash.
+
+    sha384_hash(data): Generates a SHA-384 hash.
+
+    sha512_hash(data): Generates a SHA-512 hash.
+
+All hashing functions:
+
+    Args: data (str): Input string to hash.
+
+    Returns: Hash value (str).
+
+aes_decrypt_ecb(ciphertext, key)
+
+Decrypts AES-encrypted ciphertext in ECB mode.
+
+Args:
+
+ciphertext (bytes): The encrypted data.
+
+key (bytes): The decryption key.
+
+Returns:
+
+Decrypted plaintext (str).
+
+RSA Encryption/Decryption
+
+generate_rsa_keys()
+
+Generates a pair of RSA public and private keys.
+
+Returns:
+
+private_key (bytes): RSA private key.
+
+public_key (bytes): RSA public key.
+
+rsa_encrypt(plaintext, public_key)
+
+Encrypts plaintext using an RSA public key.
+
+Args:
+
+plaintext (str): The plaintext to encrypt.
+
+public_key (bytes): The RSA public key.
+
+Returns:
+
+Encrypted data (bytes).
+
+rsa_decrypt(encrypted_data, private_key)
+
+Decrypts RSA-encrypted data using a private key.
+
+Args:
+
+encrypted_data (bytes): The encrypted data.
+
+private_key (bytes): The RSA private key.
+
+Returns:
+
+Decrypted plaintext (str).
+
+Hashing Functions
+
+md5_hash(data): Generates an MD5 hash of the input data.
+
+sha1_hash(data): Generates a SHA-1 hash.
+
+sha224_hash(data): Generates a SHA-224 hash.
+
+sha256_hash(data): Generates a SHA-256 hash.
+
+sha384_hash(data): Generates a SHA-384 hash.
+
+sha512_hash(data): Generates a SHA-512 hash.
+
+All hashing functions:
+
+Args: data (str): Input string to hash.
+
+Returns: Hash value (str).
+
 Outputs
 
     RSA: Encrypts and decrypts plaintext securely.
