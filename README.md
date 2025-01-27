@@ -32,84 +32,84 @@ Function Details
 
     Encrypts plaintext using AES in ECB mode.
 
-Args:
+    Args:
 
-    data (str): The plaintext to encrypt.
+        data (str): The plaintext to encrypt.
 
-    key (bytes): A key of length 16, 24, or 32 bytes.
+        key (bytes): A key of length 16, 24, or 32 bytes.
 
-    Returns:
+        Returns:
 
-        Encrypted data (bytes).Function Details
-        AES Encryption/Decryption
+            Encrypted data (bytes).Function Details
+            AES Encryption/Decryption
 
-            aes_encrypt_ecb(data, key)
+                aes_encrypt_ecb(data, key)
 
-                Encrypts plaintext using AES in ECB mode.
+                    Encrypts plaintext using AES in ECB mode.
 
-                Args:
+                    Args:
 
-                    data (str): The plaintext to encrypt.
+                        data (str): The plaintext to encrypt.
 
-                    key (bytes): A key of length 16, 24, or 32 bytes.
+                        key (bytes): A key of length 16, 24, or 32 bytes.
 
-                Returns:
+                    Returns:
 
-                    Encrypted data (bytes).
+                        Encrypted data (bytes).
 
-            aes_decrypt_ecb(ciphertext, key)
+                aes_decrypt_ecb(ciphertext, key)
 
-                Decrypts AES-encrypted ciphertext in ECB mode.
+                    Decrypts AES-encrypted ciphertext in ECB mode.
 
-                Args:
+                    Args:
 
-                    ciphertext (bytes): The encrypted data.
+                        ciphertext (bytes): The encrypted data.
 
-                    key (bytes): The decryption key.
+                        key (bytes): The decryption key.
 
-                Returns:
+                    Returns:
 
-                    Decrypted plaintext (str).
+                        Decrypted plaintext (str).
 
-        RSA Encryption/Decryption
+            RSA Encryption/Decryption
 
-            generate_rsa_keys()
+                generate_rsa_keys()
 
-                Generates a pair of RSA public and private keys.
+                    Generates a pair of RSA public and private keys.
 
-                Returns:
+                    Returns:
 
-                    private_key (bytes): RSA private key.
+                        private_key (bytes): RSA private key.
 
-                    public_key (bytes): RSA public key.
+                        public_key (bytes): RSA public key.
 
-            rsa_encrypt(plaintext, public_key)
+                rsa_encrypt(plaintext, public_key)
 
-                Encrypts plaintext using an RSA public key.
+                    Encrypts plaintext using an RSA public key.
 
-                Args:
+                    Args:
 
-                    plaintext (str): The plaintext to encrypt.
+                        plaintext (str): The plaintext to encrypt.
 
-                    public_key (bytes): The RSA public key.
+                        public_key (bytes): The RSA public key.
 
-                Returns:
+                    Returns:
 
-                    Encrypted data (bytes).
+                        Encrypted data (bytes).
 
-            rsa_decrypt(encrypted_data, private_key)
+                rsa_decrypt(encrypted_data, private_key)
 
-                Decrypts RSA-encrypted data using a private key.
+                    Decrypts RSA-encrypted data using a private key.
 
-                Args:
+                    Args:
 
-                    encrypted_data (bytes): The encrypted data.
+                        encrypted_data (bytes): The encrypted data.
 
-                    private_key (bytes): The RSA private key.
+                        private_key (bytes): The RSA private key.
 
-                Returns:
+                    Returns:
 
-                    Decrypted plaintext (str).
+                        Decrypted plaintext (str).
 
                  
 All hashing functions:
