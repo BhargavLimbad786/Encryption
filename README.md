@@ -30,107 +30,32 @@ Function Details
 
     aes_encrypt_ecb(data, key)
 
-    Encrypts plaintext using AES in ECB mode.
+        Encrypts plaintext using AES in ECB mode.
 
-    Args:
+        Args:
 
-        data (str): The plaintext to encrypt.
+            data (str): The plaintext to encrypt.
 
-        key (bytes): A key of length 16, 24, or 32 bytes.
+            key (bytes): A key of length 16, 24, or 32 bytes.
 
         Returns:
 
             Encrypted data (bytes).Function Details
-            AES Encryption/Decryption
-
-                aes_encrypt_ecb(data, key)
-
-                    Encrypts plaintext using AES in ECB mode.
-
-                    Args:
-
-                        data (str): The plaintext to encrypt.
-
-                        key (bytes): A key of length 16, 24, or 32 bytes.
-
-                    Returns:
-
-                        Encrypted data (bytes).
-
-                aes_decrypt_ecb(ciphertext, key)
-
-                    Decrypts AES-encrypted ciphertext in ECB mode.
-
-                    Args:
-
-                        ciphertext (bytes): The encrypted data.
-
-                        key (bytes): The decryption key.
-
-                    Returns:
-
-                        Decrypted plaintext (str).
-
-            RSA Encryption/Decryption
-
-                generate_rsa_keys()
-
-                    Generates a pair of RSA public and private keys.
-
-                    Returns:
-
-                        private_key (bytes): RSA private key.
-
-                        public_key (bytes): RSA public key.
-
-                rsa_encrypt(plaintext, public_key)
-
-                    Encrypts plaintext using an RSA public key.
-
-                    Args:
-
-                        plaintext (str): The plaintext to encrypt.
-
-                        public_key (bytes): The RSA public key.
-
-                    Returns:
-
-                        Encrypted data (bytes).
-
-                rsa_decrypt(encrypted_data, private_key)
-
-                    Decrypts RSA-encrypted data using a private key.
-
-                    Args:
-
-                        encrypted_data (bytes): The encrypted data.
-
-                        private_key (bytes): The RSA private key.
-
-                    Returns:
-
-                        Decrypted plaintext (str).
-
-                 
-All hashing functions:
-
-    Args: data (str): Input string to hash.
-
-    Returns: Hash value (str).
-
+        
     aes_decrypt_ecb(ciphertext, key)
 
         Decrypts AES-encrypted ciphertext in ECB mode.
 
         Args:
 
-        ciphertext (bytes): The encrypted data.
+            ciphertext (bytes): The encrypted data.
 
-        key (bytes): The decryption key.
+        key (bytes):
+            The decryption key.
 
         Returns:
 
-        Decrypted plaintext (str).
+            Decrypted plaintext (str).
 
     RSA Encryption/Decryption
 
@@ -144,19 +69,19 @@ All hashing functions:
 
         public_key (bytes): RSA public key.
 
-        rsa_encrypt(plaintext, public_key)
+    rsa_encrypt(plaintext, public_key)
 
         Encrypts plaintext using an RSA public key.
 
         Args:
 
-        plaintext (str): The plaintext to encrypt.
+            plaintext (str): The plaintext to encrypt.
 
-        public_key (bytes): The RSA public key.
+            public_key (bytes): The RSA public key.
 
         Returns:
 
-    Encrypted data (bytes).
+            Encrypted data (bytes).
 
     rsa_decrypt(encrypted_data, private_key)
 
@@ -164,15 +89,20 @@ All hashing functions:
 
         Args:
 
-        encrypted_data (bytes): The encrypted data.
+            encrypted_data (bytes): The encrypted data.
 
-        private_key (bytes): The RSA private key.
+            private_key (bytes): The RSA private key.
 
         Returns:
 
-        Decrypted plaintext (str).
+            Decrypted plaintext (str).
 
-Hashing Functions
+                 
+All hashing functions:
+
+    Args: data (str): Input string to hash.
+
+    Returns: Hash value (str).
 
     md5_hash(data): Generates an MD5 hash of the input data.
 
