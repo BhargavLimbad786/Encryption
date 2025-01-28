@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="encyption",  # Name of your package
-    version="0.1.0",      # Initial version number
+    version="1.0.0",      # Initial version number
     author="Bhargav Limbad",  # Your name
     author_email="bhargav@e6x.io",  # Your email
     description="A simple AES and RSA encryption package",  # Short description
