@@ -21,8 +21,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',  # Minimum Python version
-    install_requires=[  # List of dependencies (if any)
-        "pycryptodome",  # Example, if you use PyCryptodome
-    ],
-    test_suite='tests',  # Automatically find test files in the tests folder
+    # test_suite='tests',  # Automatically find test files in the tests folder
 )
