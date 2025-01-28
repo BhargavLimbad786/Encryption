@@ -1,0 +1,17 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environments
+venv/
+env/
+
+# IDE and Editor files
+.vscode/
+.idea/
+
+# Build and distribution directories
+build/
+dist/
+*.egg-info/
