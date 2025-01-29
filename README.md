@@ -130,4 +130,4 @@ Security Notes
 
 License
 
-    This project is licensed under the Apache License
+    This project is licensed under the Apache2 reset License
