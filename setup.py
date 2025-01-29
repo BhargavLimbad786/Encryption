@@ -17,7 +17,7 @@ setup(
     install_requires=["pycryptodome"],   # Automatically find packages in the current directory
     classifiers=[  # A list of classifiers that help users find your package
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',  # Minimum Python version
