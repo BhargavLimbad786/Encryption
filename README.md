@@ -14,9 +14,7 @@ Features
 
 Dependencies 
 
-Go to docs directory than run given command.
-
-        pip install -r requirements.txt
+    cd docs | pip install -r requirements.txt
 
 Installation
 
