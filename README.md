@@ -13,8 +13,9 @@ Features
     Hashing: Supports MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512.
 
 Dependencies
+    Go to docs Folder than run given command.
 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 Installation
 
