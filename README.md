@@ -12,7 +12,7 @@ Features
     RSA Encryption/Decryption: Uses PKCS1_OAEP padding for secure RSA operations.
     Hashing: Supports MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512.
 
-Dependencies
+Dependencies 
 
 Go to docs Folder than run given command.
 
