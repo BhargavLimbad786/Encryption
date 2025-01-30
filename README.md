@@ -14,7 +14,7 @@ Features
 
 Dependencies 
 
-    cd docs | pip install -r requirements.txt
+    cd docs && pip install -r requirements.txt
 
 Installation
 
