@@ -14,7 +14,7 @@ Features
 
 Dependencies 
 
-Go to docs Folder than run given command.
+Go to docs directory than run given command.
 
         pip install -r requirements.txt
 
