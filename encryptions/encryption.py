@@ -2,8 +2,6 @@ from Crypto.Cipher import AES, PKCS1_OAEP
 from Crypto.PublicKey import RSA
 from Crypto.Util.Padding import pad, unpad
 from Crypto.Random import get_random_bytes
-from Crypto.Signature import pkcs1_15
-from Crypto.Hash import SHA256
 import base64
 import hashlib
 def aes_encrypt_ecb(data, key):
