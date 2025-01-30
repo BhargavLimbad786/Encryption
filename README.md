@@ -16,13 +16,11 @@ Dependencies
 
     pip install -r requirements.txt
 
-Installation
-
-    pip install pycryptodome
-
 to Run the script as a standalone program:
 
-    python script_name.py
+go to the encryption directory and run given command.
+
+    python encryption.py
 
 Function Details
 
@@ -50,8 +48,8 @@ Function Details
 
             ciphertext (bytes): The encrypted data.
 
-        key (bytes):
-            The decryption key.
+            key (bytes):
+                The decryption key.
 
         Returns:
 
@@ -65,9 +63,9 @@ Function Details
 
         Returns:
 
-        private_key (bytes): RSA private key.
+            private_key (bytes): RSA private key.
 
-        public_key (bytes): RSA public key.
+            public_key (bytes): RSA public key.
 
     rsa_encrypt(plaintext, public_key)
 
@@ -100,10 +98,6 @@ Function Details
                  
 All hashing functions:
 
-    Args: data (str): Input string to hash.
-
-    Returns: Hash value (str).
-
     md5_hash(data): Generates an MD5 hash of the input data.
 
     sha1_hash(data): Generates a SHA-1 hash.
@@ -115,6 +109,10 @@ All hashing functions:
     sha384_hash(data): Generates a SHA-384 hash.
 
     sha512_hash(data): Generates a SHA-512 hash.
+
+    Args: data (str): Input string to hash.
+
+    Returns: Hash value (str).
 
 
 Outputs
