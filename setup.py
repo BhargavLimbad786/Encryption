@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="encyption",  # Name of your package
-    version="1.0.0",      # Initial version number
+    version="1.0.1",      # Initial version number
     author="Bhargav Limbad",  # Your name
     author_email="bhargav@e6x.io",  # Your email
     description="A simple AES and RSA encryption package",  # Short description
@@ -17,7 +17,7 @@ setup(
     install_requires=["pycryptodome"],   # Automatically find packages in the current directory
     classifiers=[  # A list of classifiers that help users find your package
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: Apache License",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',  # Minimum Python version

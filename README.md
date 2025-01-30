@@ -16,12 +16,6 @@ Dependencies
 
     pip install -r requirements.txt
 
-to Run the script as a standalone program:
-
-go to the encryption directory and run given command.
-
-    python encryption.py
-
 Function Details
 
     AES Encryption/Decryption
