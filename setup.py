@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="encryption",  # Name of your package
-    version="1.0.1",      # Initial version number
+    version="1.0.2",      # Initial version number
     author="Bhargav Limbad",  # Your name
     author_email="bhargav@e6x.io",  # Your email
     description="A simple AES and RSA encryption package",  # Short description
