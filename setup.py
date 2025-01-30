@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="encyptions",  # Name of your package
-    version="1.0.2",      # Initial version number
+    name="encryptions",  # Name of your package
+    version="1.0.0",      # Initial version number
     author="Bhargav Limbad",  # Your name
     author_email="bhargav@e6x.io",  # Your email
     description="A simple AES and RSA encryption package",  # Short description
