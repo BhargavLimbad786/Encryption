@@ -134,7 +134,7 @@ This project is licensed under the Apache2 reset License
 ### Installation
 
 ```
-pip install encryptiontools
+pip install encryptions
 ```
 
 ### Asymmetric encryption and decryption
