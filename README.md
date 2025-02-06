@@ -139,7 +139,15 @@ pip install encryptiontools
 
 ### Asymmetric encryption and decryption
 
-
+first we have to initializ all module in the package creating __init__.py file
+'''python
+from .encryption import (
+    aes_encrypt_ecb, aes_decrypt_ecb, generate_rsa_keys, 
+    rsa_encrypt, rsa_decrypt, md5_hash, sha1_hash, 
+    sha224_hash, sha256_hash, sha384_hash, sha512_hash
+)
+''' 
+than create your main file.
 ```python
 from encryptions.encryption import aes_encrypt_ecb,aes_decrypt_ecb,generate_rsa_keys,rsa_encrypt,rsa_decrypt,md5_hash,sha1_hash,sha224_hash,sha256_hash,sha384_hash,sha512_hash
 from Crypto.Random import get_random_bytes
