@@ -23,7 +23,7 @@ Hashing: Supports MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512.
 
 ## Function Details
 
-    AES Encryption/Decryption
+### AES Encryption/Decryption
 
     aes_encrypt_ecb(data, key)
 
@@ -54,7 +54,7 @@ Hashing: Supports MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512.
 
             Decrypted plaintext (str).
 
-    RSA Encryption/Decryption
+### RSA Encryption/Decryption
 
     generate_rsa_keys()
 
@@ -150,6 +150,7 @@ first we have to initializ all module in the package creating __init__.py file
 than create your main file.
 ```python
 from encryptions.encryption import aes_encrypt_ecb,aes_decrypt_ecb,generate_rsa_keys,rsa_encrypt,rsa_decrypt,md5_hash,sha1_hash,sha224_hash,sha256_hash,sha384_hash,sha512_hash
+
 from Crypto.Random import get_random_bytes
 import base64
 
