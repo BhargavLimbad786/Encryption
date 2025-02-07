@@ -24,6 +24,7 @@ Hashing: Supports MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512.
 ## Function Details
 
 ### AES Encryption/Decryption
+AES is a Symmetric Encryption, AES is stand for Advanced Encryption Standard. it has many diffrent types like 128/192/256. it is used to transfer bulk of data it is less complex and faster to execute. It uses to secure file storage disk ensryption, VPNs, Communication Protocl like TLS, SSH etc..
 
     aes_encrypt_ecb(data, key)
 
@@ -55,6 +56,7 @@ Hashing: Supports MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512.
             Decrypted plaintext (str).
 
 ### RSA Encryption/Decryption
+RSA is symmetric Encryption. RSA stands for Rivest-Shamir-Adleman. It use to Secure key exchange, Digital Signatures and email encryption used with small sizes data.
 
     generate_rsa_keys()
 
@@ -94,18 +96,29 @@ Hashing: Supports MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512.
 
             Decrypted plaintext (str).
 
-                 
+In here we are also using base64 encodig, It is used to Safely Transmit Data over network. Base64 is used to Encode text as Binary Email attachments, APIs
+
+
 ## All hashing functions:
+
+md5 and sha1 is used in legacy Application and Non- critical integrity checks and less collision resistance. 
 
 -> md5_hash(data): Generates an MD5 hash of the input data.
 
 -> sha1_hash(data): Generates a SHA-1 hash.
 
+SHA-224/256(Secure hash Algorithm) is used in Digital Signatures, Password Hashing and blockchain etc. it is communally used for data integrity because of it’s strange collision resistance.
+
 -> sha224_hash(data): Generates a SHA-224 hash.
 
 -> sha256_hash(data): Generates a SHA-256 hash.
 
+
+SHA-384 is a cryptographic hash function from the SHA-2 family. It produces a 384-bit (48-byte) hash value. You can compute a SHA-384 hash in Python using the hashlib module.
+
 -> sha384_hash(data): Generates a SHA-384 hash.
+
+SHA-512 is a cryptographic hash function from the SHA-2 family that produces a 512-bit (64-byte) hash value. You can compute a SHA-512 hash in Python using the hashlib module.
 
 -> sha512_hash(data): Generates a SHA-512 hash.
 
@@ -139,7 +152,7 @@ pip install encryptions
 
 ### Asymmetric encryption and decryption
 
-```python
+```Python
 
 from encryptions.encryption import aes_encrypt_ecb,aes_decrypt_ecb,generate_rsa_keys,rsa_encrypt,rsa_decrypt,md5_hash,sha1_hash,sha224_hash,sha256_hash,sha384_hash,sha512_hash
 from Crypto.Random import get_random_bytes
@@ -156,7 +169,7 @@ if __name__ == "__main__":
      # AES encryption with AES key
     encrypted_data_aes = aes_encrypt_ecb(original_text, aes_key)
     print("\n--- AES Encryption ---")
-    print("Encrypted Text (Base64):", base64.b64encode(encrypted_data_aes).decode('utf-8'))
+    print("Encrypted Text (Base64):", base64.b64encode(encrypted_data_aes).decode('utf-8')) #in here we are using base64 encoding technique. 
 
     # Decrypt the ciphertext using the AES key
     decrypted_text_aes = aes_decrypt_ecb(encrypted_data_aes, aes_key)
@@ -188,5 +201,4 @@ if __name__ == "__main__":
     print("SHA-256 Hash:", sha256_hash(original_text))
     print("SHA-384 Hash:", sha384_hash(original_text))
     print("SHA-512 Hash:", sha512_hash(original_text))
-
-'''
+```
