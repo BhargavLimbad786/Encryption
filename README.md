@@ -3,7 +3,6 @@
 [![PyPI package](https://img.shields.io/badge/pip%20install-encryptions-brightgreen)](https://pypi.org/project/encryptions/)
 [![License](https://img.shields.io/github/license/BhargavLimbad786/Encryption)](https://github.com/BhargavLimbad786/Encryption/blob/main/LICENSE.txt)
 
-
 <a href="https://github.com/BhargavLimbad786"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 
 
